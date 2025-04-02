@@ -1,6 +1,7 @@
 import 'package:apoorva_gold_diamonds/core/constants/app_colors.dart';
 import 'package:apoorva_gold_diamonds/core/constants/app_constants.dart';
 import 'package:apoorva_gold_diamonds/core/constants/app_images.dart';
+import 'package:apoorva_gold_diamonds/presentation/pages/category/view/category.dart';
 import 'package:apoorva_gold_diamonds/presentation/pages/home/view/home.dart';
 import 'package:apoorva_gold_diamonds/presentation/widgets/app_svg.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +18,7 @@ class _LandingPageState extends State<LandingPage> {
 
   static final List<Widget> _screens = [
     Home(),
-    Container(),
+    Category(),
     Container(),
     Container(),
     Container(),
