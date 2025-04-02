@@ -38,5 +38,10 @@ static var icHeart='$kBaseIcons/ic_heart.svg';
 static var icCart='$kBaseIcons/ic_cart.svg';
 static var icNotification='$kBaseIcons/ic_notification.svg';
 static var icSearch='$kBaseIcons/ic_search.svg';
+static var icHome='$kBaseIcons/ic_home.svg';
+static var icCategory='$kBaseIcons/ic_category.svg';
+static var icOffer='$kBaseIcons/ic_offers.svg';
+static var icProfile='$kBaseIcons/ic_profile.svg';
+static var icCalender='$kBaseIcons/ic_calender.svg';
 
 }

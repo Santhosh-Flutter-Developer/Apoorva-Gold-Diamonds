@@ -147,6 +147,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_vertical_tab_bar:
+    dependency: "direct main"
+    description:
+      name: flutter_vertical_tab_bar
+      sha256: "8c1a4701516cefcb4b3dcc46026923d1612515f50fc6e6f0b82bebbb1efe65d0"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.1"
   get:
     dependency: "direct main"
     description:

@@ -38,19 +38,20 @@ class Home extends StatelessWidget {
                       ),
                      title: Image.asset(AppImages.icLogo,width: 80,),
                       actions: [
-             AppSvgImage(path: AppImages.icHeart,height: 24,width: 24,iconColor: kPrimaryButtonBackground,),
+             AppSvgImage(path: AppImages.icHeart,height: 18,width: 18,iconColor: kPrimaryButtonBackground,),
              SizedBox(
               width: 10.w,
              ),
-              AppSvgImage(path: AppImages.icCart,height: 24,width: 24,iconColor: kPrimaryButtonBackground,),
+              AppSvgImage(path: AppImages.icCart,height: 18,width: 18,iconColor: kPrimaryButtonBackground,),
               SizedBox(
               width: 10.w,
              ),
-               AppSvgImage(path: AppImages.icNotification,height: 24,width: 24,iconColor: kPrimaryButtonBackground,),
+               AppSvgImage(path: AppImages.icNotification,height: 18,width: 18,iconColor: kPrimaryButtonBackground,),
                       ],
                    
                     ),
       body: SingleChildScrollView(
+        padding: EdgeInsets.only(bottom: 100.h),
         child: Column(
           children: [
             Container(
@@ -66,7 +67,7 @@ class Home extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      AppSvgImage(path: AppImages.icSearch,height: 24,width: 24,iconColor: kPrimaryButtonBackground,),
+                      AppSvgImage(path: AppImages.icSearch,height: 18,width: 18,iconColor: kPrimaryButtonBackground,),
                       SizedBox(
                         width: 10.w,
                       ),

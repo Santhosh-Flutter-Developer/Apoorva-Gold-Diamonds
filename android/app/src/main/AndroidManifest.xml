@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="apoorva_gold_diamonds"
+        android:label="Apoorva"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -1,6 +1,6 @@
 import 'package:apoorva_gold_diamonds/core/constants/app_colors.dart';
 import 'package:apoorva_gold_diamonds/core/constants/app_styles.dart';
-import 'package:apoorva_gold_diamonds/presentation/pages/home/view/home.dart';
+import 'package:apoorva_gold_diamonds/presentation/pages/landing_page/view/landing_page.dart';
 import 'package:apoorva_gold_diamonds/presentation/pages/onboarding/controller/onboarding_controller.dart';
 import 'package:apoorva_gold_diamonds/presentation/widgets/app_button.dart';
 import 'package:apoorva_gold_diamonds/routes/app_routes.dart';
@@ -127,7 +127,7 @@ class Onboarding extends StatelessWidget {
                     onClick: ()async{
                       final storage = GetStorage();
                         storage.write("isFirstTime",false);
-                        Go.to(()=>Home());
+                        Go.to(()=>LandingPage());
                   },
                   child: Text("GET STARTED",style: kAppTextTheme.titleLarge?.copyWith(
                     color: kWhite,
