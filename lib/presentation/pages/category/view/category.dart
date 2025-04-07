@@ -23,8 +23,8 @@ class Category extends StatelessWidget {
         },
       builder:(controller) => Scaffold(
         appBar: AppBar(
-          leading: IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios,color: kPrimaryButtonBackground,)),
-          titleSpacing: 0,
+         automaticallyImplyLeading: false,
+         
           title: Text('Category',style: kAppTextTheme.titleLarge?.copyWith(
             color: kPrimaryButtonBackground
           ),),

@@ -3,8 +3,10 @@ import 'package:apoorva_gold_diamonds/core/constants/app_constants.dart';
 import 'package:apoorva_gold_diamonds/core/constants/app_images.dart';
 import 'package:apoorva_gold_diamonds/core/constants/app_styles.dart';
 import 'package:apoorva_gold_diamonds/presentation/pages/home/controller/home_controller.dart';
+import 'package:apoorva_gold_diamonds/presentation/pages/whislist/view/whislist.dart';
 import 'package:apoorva_gold_diamonds/presentation/widgets/app_svg.dart';
 import 'package:apoorva_gold_diamonds/presentation/widgets/product_widget.dart';
+import 'package:apoorva_gold_diamonds/routes/app_routes.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -38,7 +40,9 @@ class Home extends StatelessWidget {
                       ),
                      title: Image.asset(AppImages.icLogo,width: 80,),
                       actions: [
-             AppSvgImage(path: AppImages.icHeart,height: 18,width: 18,iconColor: kPrimaryButtonBackground,),
+             AppSvgImage(path: AppImages.icHeart,height: 18,width: 18,iconColor: kPrimaryButtonBackground,onTap: (){
+              Go.to(()=>Whislist());
+             },),
              SizedBox(
               width: 10.w,
              ),
@@ -47,6 +51,9 @@ class Home extends StatelessWidget {
               width: 10.w,
              ),
                AppSvgImage(path: AppImages.icNotification,height: 18,width: 18,iconColor: kPrimaryButtonBackground,),
+                             SizedBox(
+              width: 10.w,
+             ),
                       ],
                    
                     ),
