@@ -2,6 +2,7 @@ import 'package:apoorva_gold_diamonds/core/constants/app_colors.dart';
 import 'package:apoorva_gold_diamonds/core/constants/app_constants.dart';
 import 'package:apoorva_gold_diamonds/core/constants/app_images.dart';
 import 'package:apoorva_gold_diamonds/core/constants/app_styles.dart';
+import 'package:apoorva_gold_diamonds/presentation/pages/cart/view/cart.dart';
 import 'package:apoorva_gold_diamonds/presentation/pages/home/controller/home_controller.dart';
 import 'package:apoorva_gold_diamonds/presentation/pages/whislist/view/whislist.dart';
 import 'package:apoorva_gold_diamonds/presentation/widgets/app_svg.dart';
@@ -46,7 +47,11 @@ class Home extends StatelessWidget {
              SizedBox(
               width: 10.w,
              ),
-              AppSvgImage(path: AppImages.icCart,height: 18,width: 18,iconColor: kPrimaryButtonBackground,),
+              AppSvgImage(path: AppImages.icCart,height: 18,width: 18,iconColor: kPrimaryButtonBackground,
+              onTap: (){
+                Go.to(()=>Cart());
+              },
+              ),
               SizedBox(
               width: 10.w,
              ),

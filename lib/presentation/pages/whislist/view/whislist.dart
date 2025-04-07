@@ -1,8 +1,10 @@
 import 'package:apoorva_gold_diamonds/core/constants/app_colors.dart';
 import 'package:apoorva_gold_diamonds/core/constants/app_images.dart';
 import 'package:apoorva_gold_diamonds/core/constants/app_styles.dart';
+import 'package:apoorva_gold_diamonds/presentation/pages/cart/view/cart.dart';
 import 'package:apoorva_gold_diamonds/presentation/pages/whislist/controller/whislist_controller.dart';
 import 'package:apoorva_gold_diamonds/presentation/widgets/app_svg.dart';
+import 'package:apoorva_gold_diamonds/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -32,7 +34,9 @@ class Whislist extends StatelessWidget {
           ),),
           actions: [
           
-              AppSvgImage(path: AppImages.icCart,height: 18,width: 18,iconColor: kPrimaryButtonBackground,),
+              AppSvgImage(path: AppImages.icCart,height: 18,width: 18,iconColor: kPrimaryButtonBackground,onTap: (){
+                Go.to(()=>Cart());
+              },),
               SizedBox(
               width: 10.w,
              ),
